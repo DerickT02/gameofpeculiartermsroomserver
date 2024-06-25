@@ -1,9 +1,10 @@
 import express from 'express'
-import { getRoom } from './routecontroller';
+import { getRoom, getPlayersScore } from './routecontroller';
 
 const router = express.Router();
 
 router.get("/room/:id", getRoom)
+router.get("/room/:id/:player", getPlayersScore)
 
 
 
